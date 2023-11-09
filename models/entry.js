@@ -2,7 +2,7 @@ const {Schema, model} = require('mongoose')
 
 const EntrySchema = Schema({
     entryDate: {
-        type: Date,
+        type: String,
         required: true
     },
     entryHour: {
