@@ -48,7 +48,7 @@ const listUsers = async (req = request, res = response) => {
 const editUser = async (req = request, res = response) => {
     try {
        const userId = req.params.userId
-       const user = await User.finById(userId)
+       const user = await User.findById(userId)
        if (!user) {
         return res.status(400).send('User nor found')
        }
