@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: false }))
 const entry = require('./routes/entry')
 const exit = require('./routes/exit')
 const user = require('./routes/user')
+const parkingSpot = require('./routes/parkingSpot')
 const authorization = require('./routes/authorization')
 
 app.use(express.json())
@@ -15,6 +16,7 @@ app.use(express.json())
 app.use('/entries', entry)
 app.use('/exits', exit)
 app.use('/users', user)
+app.use('/parkingSpots', parkingSpot)
 app.use('/authorization', authorization)
 
 module.exports = app
