@@ -26,8 +26,16 @@ PORT=XXXX
 
 ***
 
-## Install dependencies
-npm install
+## Dependencies
+* bcryptjs
+* cors
+* dotenv
+* express
+* express-validator
+* jsonwebtoken
+* mongoose
+
+To install the dependencies you must run the command: npm install
 
 ***
 
